@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 8570808956880026398}
   - component: {fileID: 4172307684201596433}
   - component: {fileID: 6447175656172073251}
+  - component: {fileID: 1231260080440394544}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -159,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthChange: -5
   _applyToTarget: 0
+  _knockbackForce: 0
   _destroyOnCollision: 0
 --- !u!114 &4172307684201596433
 MonoBehaviour:
@@ -172,6 +174,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b894caf962290194cbde81b2c735288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defaultActions:
+    m_PersistentCalls:
+      m_Calls: []
+  _alertedActions:
+    m_PersistentCalls:
+      m_Calls: []
+  _huntActions:
+    m_PersistentCalls:
+      m_Calls: []
+  _miscPattern1Actions:
+    m_PersistentCalls:
+      m_Calls: []
+  _miscPattern2Actions:
+    m_PersistentCalls:
+      m_Calls: []
+  _miscPattern3Actions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &6447175656172073251
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -193,6 +213,23 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.75
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1231260080440394544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110362282385240772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9ce5586c1864b43abae38def6de415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthMax: 10
+  _healthCur: 10
+  _invincibilityFramesMax: 0.2
+  _invincibilityFramesCur: 0
+  _isDead: 0
 --- !u!1 &5176193525196211955
 GameObject:
   m_ObjectHideFlags: 0
